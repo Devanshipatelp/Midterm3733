@@ -1,0 +1,89 @@
+body {
+    width: 99%;
+    margin: auto;
+    background-color: #faf4e2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    width: 570px;
+    height:80px;
+    border-radius: 4px;
+    border-style: solid;
+   
+}
+main{
+    border-style: solid ;
+    border-radius: 4px;
+    width: 1400px;
+    height:600px;
+    align-items: center;
+   margin: auto;
+   padding: auto;
+}
+.colum{
+   float: left;
+    width:13%;
+    padding: 25px;
+    margin: 15px;
+    align-items: center;
+}
+.row ::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Parent Container */
+.content_img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+   
+}
+
+/* Child Text Container */
+.content_img div div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgb(235, 236, 174);
+    color: rgb(28, 20, 20);
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;  
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+    cursor: pointer;
+}    
+
+.content_img:hover div div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.9;        
+}
+
+
+button{    
+    width:300px;
+    height: 40px;
+    background-color:#548C2F;
+    color: white;
+    font-size: 20px;
+}
+.button{
+    margin: auto;
+    padding: auto;
+    width:300px;
+    height: 40px;
+}
